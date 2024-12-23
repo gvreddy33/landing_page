@@ -19,7 +19,10 @@ defmodule LandingPageWeb.Router do
 
     get "/", PageController, :home
     get "/about", PageController, :about
-    get "/contact", PageController, :contact
+
+    get "/contact", MessageController, :new
+    post "/contact", MessageController, :create
+
 
   end
 

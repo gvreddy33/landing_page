@@ -17,7 +17,8 @@ defmodule LandingPageWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import LandingPageWeb.Gettext
+  use Gettext, backend: LandingPageWeb.Gettext
+
 
   @doc """
   Renders a modal.

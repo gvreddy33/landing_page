@@ -20,5 +20,5 @@ defmodule LandingPageWeb.Gettext do
 
   See the [Gettext Docs](https://hexdocs.pm/gettext) for detailed usage.
   """
-  use Gettext, otp_app: :landing_page
+  use Gettext.Backend, otp_app: :landing_page
 end
